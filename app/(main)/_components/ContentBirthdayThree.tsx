@@ -85,7 +85,7 @@ const ContentBirthdayThree = () => {
       <AlertDialog open={showContent} onOpenChange={setShowContent}>
         <AlertDialogContent className="w-[90%] m-auto rounded-lg max-w-[400px]">
           <AlertDialogHeader className="w-full flex flex-col justify-center items-center gap-y-[20px]">
-            <Image src="/gif/bear-modal.gif" alt="Gif" width={100} height={100} className="rounded-full object-cover" />
+            <Image src="/gif/bear-modal.gif" alt="Gif" priority width={100} height={100} className="rounded-full object-cover" />
             <AlertDialogTitle>Trà My có muốn nhận quà tiếp không nhỉ? 😁😘</AlertDialogTitle>
             <AlertDialogTitle className="text-md">Chọn đi nè 😄</AlertDialogTitle>
           </AlertDialogHeader>
@@ -113,7 +113,7 @@ const ContentBirthdayThree = () => {
       <AlertDialog open={showContentFirst} onOpenChange={setShowContentFirst}>
         <AlertDialogContent className="w-[90%] m-auto rounded-lg max-w-[400px] py-[40px]">
           <AlertDialogHeader className="w-full flex flex-col justify-center items-center gap-y-[20px]">
-            <Image src="/gif/bear-modal-agree.gif" alt="Gif" width={100} height={100} className="rounded-full object-cover" />
+            <Image src="/gif/bear-modal-agree.gif" alt="Gif" priority width={100} height={100} className="rounded-full object-cover" />
             <AlertDialogTitle className="text-md">Cứ bình tĩnh nào My, quà nè! 😄</AlertDialogTitle>
           </AlertDialogHeader>
         </AlertDialogContent>
@@ -122,7 +122,7 @@ const ContentBirthdayThree = () => {
       <AlertDialog open={showContentSecond} onOpenChange={setShowContentSecond}>
         <AlertDialogContent className="w-[90%] m-auto rounded-lg max-w-[400px] py-[40px]">
           <AlertDialogHeader className="w-full flex flex-col justify-center items-center gap-y-[20px]">
-            <Image src="/gif/bear-modal-reject.gif" alt="Gif" width={100} height={100} className="rounded-full object-cover" />
+            <Image src="/gif/bear-modal-reject.gif" alt="Gif" priority width={100} height={100} className="rounded-full object-cover" />
             <AlertDialogTitle className="text-md">Thôi đừng dỗi nữa, quà ở đây nè!😄</AlertDialogTitle>
           </AlertDialogHeader>
         </AlertDialogContent>

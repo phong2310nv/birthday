@@ -43,10 +43,10 @@ const ContentBirthday = () => {
             initial="hidden"
             className="w-fit mx-auto flex items-center justify-center mt-3"
           >
-            <Image src="/images/candle.png" alt="Candle" width={50} height={100} className={`trasition-all duration-300 ${candleOneOff ? "opacity-0" : "opacity-100"}`} onClick={() => setCandleOneOff(true)} />
-            <Image src="/images/candle.png" alt="Candle" width={50} height={100} className={`trasition-all duration-300 ${candleTwoOff ? "opacity-0" : "opacity-100"}`} onClick={() => setCandleTwoOff(true)} />
-            <Image src="/images/candle.png" alt="Candle" width={50} height={100} className={`trasition-all duration-300 ${candleThreeOff ? "opacity-0" : "opacity-100"}`} onClick={() => setCandleThreeOff(true)} />
-            <Image src="/images/candle.png" alt="Candle" width={50} height={100} className={`trasition-all duration-300 ${candleFourOff ? "opacity-0" : "opacity-100"}`} onClick={() => setCandleFourOff(true)} />
+            <Image src="/images/candle.png" alt="Candle" priority width={50} height={100} className={`trasition-all duration-300 ${candleOneOff ? "opacity-0" : "opacity-100"}`} onClick={() => setCandleOneOff(true)} />
+            <Image src="/images/candle.png" alt="Candle" priority width={50} height={100} className={`trasition-all duration-300 ${candleTwoOff ? "opacity-0" : "opacity-100"}`} onClick={() => setCandleTwoOff(true)} />
+            <Image src="/images/candle.png" alt="Candle" priority width={50} height={100} className={`trasition-all duration-300 ${candleThreeOff ? "opacity-0" : "opacity-100"}`} onClick={() => setCandleThreeOff(true)} />
+            <Image src="/images/candle.png" alt="Candle" priority width={50} height={100} className={`trasition-all duration-300 ${candleFourOff ? "opacity-0" : "opacity-100"}`} onClick={() => setCandleFourOff(true)} />
           </motion.div>
         </>
       ) : (

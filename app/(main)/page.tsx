@@ -33,7 +33,7 @@ export default function Home() {
     <main className="w-full h-screen relative">
       {!isOpenGift ? (
         <div className="absolute bg-black/100 w-full h-full top-0 left-0 flex flex-col items-center justify-center gap-y-[60px] px-5">
-          <Image src="/images/gift-box.png" alt="Gift" width={80} height={80} onClick={() => setIsOpenGift(true)} />
+          <Image src="/images/gift-box.png" alt="Gift" priority width={80} height={80} onClick={() => setIsOpenGift(true)} />
           <p className="font-semibold text-md text-white text-center w-full">Nhấn vào để nhận quà đi chứ còn đợi gì nữa? 😂</p>
         </div>
       ) : (
@@ -76,13 +76,13 @@ export default function Home() {
         </div>
       )}
       {isOpenGift && (
-        <audio id="audio" loop autoPlay>
+        <audio id="audio" loop autoPlay preload="auuto">
           <source src="/audio/bg-music.mp3" type="audio/mpeg" />
         </audio>
       )}
       {showContent && (
         <div className="absolute top-0 left-0 w-full h-full">
-          <video src="/video/backround_heart_new.webm" autoPlay loop muted className="w-full h-full object-cover" />
+          <video src="/video/backround_heart_new.webm" autoPlay loop muted preload="auto" className="w-full h-full object-cover" />
           <div className="absolute top-0 left-0 w-full h-full bg-black/50" />
           <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center pt-[100px]">
             <ContentBody />
