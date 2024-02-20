@@ -38,6 +38,7 @@ const ContentBirthdayThree = () => {
   const [endContentOne, setEndContentOne] = useState<boolean>(false);
   const [endContentTwo, setEndContentTwo] = useState<boolean>(false);
   const [lastContent, setLastContent] = useState<boolean>(false);
+  const [lastContentQoute, setLastContentQoute] = useState<boolean>(false);
 
   useEffect(() => {
     if (showContentFirst || showContentSecond) {
@@ -74,7 +75,7 @@ const ContentBirthdayThree = () => {
           )}
           {lastContent && (
             <div className={`${dancingScript.className} text-center text-lg w-full`}>
-              <AnimatedText text="Chúc mừng ngày sinh nhật vui vẻ. 🥳🎉" delay={1} end={1000} setFinish={() => { }} />
+              <AnimatedText text="Chúc mừng ngày sinh nhật vui vẻ. 🥳🎉" delay={1} end={1000} setFinish={setLastContentQoute} />
             </div>
           )}
         </div>
@@ -82,7 +83,7 @@ const ContentBirthdayThree = () => {
       {finishFirst && finishThird && finishFifth && (<div className="mt-[20px] w-full flex justify-end" onClick={() => setShowContent(true)}>Click to continue</div>)}
       {/* Dialog Question */}
       <AlertDialog open={showContent} onOpenChange={setShowContent}>
-        <AlertDialogContent className="w-[80%] m-auto rounded-lg max-w-[400px]">
+        <AlertDialogContent className="w-[90%] m-auto rounded-lg max-w-[400px]">
           <AlertDialogHeader className="w-full flex flex-col justify-center items-center gap-y-[20px]">
             <Image src="/gif/bear-modal.gif" alt="Gif" width={100} height={100} className="rounded-full object-cover" />
             <AlertDialogTitle>Trà My có muốn nhận quà tiếp không nhỉ? 😁😘</AlertDialogTitle>
@@ -110,7 +111,7 @@ const ContentBirthdayThree = () => {
       </AlertDialog>
       {/* Dialog Agree */}
       <AlertDialog open={showContentFirst} onOpenChange={setShowContentFirst}>
-        <AlertDialogContent className="w-[80%] m-auto rounded-lg max-w-[400px] py-[40px]">
+        <AlertDialogContent className="w-[90%] m-auto rounded-lg max-w-[400px] py-[40px]">
           <AlertDialogHeader className="w-full flex flex-col justify-center items-center gap-y-[20px]">
             <Image src="/gif/bear-modal-agree.gif" alt="Gif" width={100} height={100} className="rounded-full object-cover" />
             <AlertDialogTitle className="text-md">Cứ bình tĩnh nào My, quà nè! 😄</AlertDialogTitle>
@@ -119,7 +120,7 @@ const ContentBirthdayThree = () => {
       </AlertDialog>
       {/* Dialog Disagree */}
       <AlertDialog open={showContentSecond} onOpenChange={setShowContentSecond}>
-        <AlertDialogContent className="w-[80%] m-auto rounded-lg max-w-[400px] py-[40px]">
+        <AlertDialogContent className="w-[90%] m-auto rounded-lg max-w-[400px] py-[40px]">
           <AlertDialogHeader className="w-full flex flex-col justify-center items-center gap-y-[20px]">
             <Image src="/gif/bear-modal-reject.gif" alt="Gif" width={100} height={100} className="rounded-full object-cover" />
             <AlertDialogTitle className="text-md">Thôi đừng dỗi nữa, quà ở đây nè!😄</AlertDialogTitle>

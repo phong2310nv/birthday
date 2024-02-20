@@ -39,7 +39,7 @@ export default function Home() {
       ) : (
         <div className="absolute w-full h-full top-0 left-0">
           <AlertDialog open={openNameInput} onOpenChange={setOpenNameInput}>
-            <AlertDialogContent className="w-[80%] m-auto rounded-lg max-w-[400px]">
+            <AlertDialogContent className="w-[90%] m-auto rounded-lg max-w-[400px]">
               <AlertDialogHeader className="w-full flex flex-col justify-center items-center gap-y-[20px]">
                 <AlertDialogTitle>Nhập tên của cậu vào nhé!</AlertDialogTitle>
                 <Input value={name} onChange={(e) => setName(e.target.value)} placeholder="" className="w-full focus-visible:ring-0 focus-visible:ring-offset-0 max-w-[300px]" />
@@ -57,7 +57,7 @@ export default function Home() {
             </AlertDialogContent>
           </AlertDialog>
           <AlertDialog open={openNameConfirm} onOpenChange={setOpenNameConfirm}>
-            <AlertDialogContent className="w-[80%] m-auto rounded-lg max-w-[400px]">
+            <AlertDialogContent className="w-[90%] m-auto rounded-lg max-w-[400px]">
               <AlertDialogHeader className="w-full flex flex-col justify-center items-center gap-y-[20px]">
                 <AlertDialogTitle>Tên của mình cũng không nhớ là sao nhỉ? Nhập &quot;Trà My&quot; vào nhé! 😈</AlertDialogTitle>
               </AlertDialogHeader>
@@ -82,7 +82,7 @@ export default function Home() {
       )}
       {showContent && (
         <div className="absolute top-0 left-0 w-full h-full">
-          <video src="/video/backround_heart.mp4" autoPlay loop muted className="w-full h-full object-cover" />
+          <video src="/video/backround_heart_new.webm" autoPlay loop muted className="w-full h-full object-cover" />
           <div className="absolute top-0 left-0 w-full h-full bg-black/50" />
           <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center pt-[100px]">
             <ContentBody />
