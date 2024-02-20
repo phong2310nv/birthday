@@ -76,13 +76,13 @@ export default function Home() {
         </div>
       )}
       {isOpenGift && (
-        <audio id="audio" loop autoPlay preload="auuto">
+        <audio id="audio" loop autoPlay preload="auto">
           <source src="/audio/bg-music.mp3" type="audio/mpeg" />
         </audio>
       )}
+      <video src="/video/backround_heart_new.webm" autoPlay loop muted preload="auto" className={`absolute top-0 left-0 w-full h-full object-cover z-[-1] ${isOpenGift ? "block" : "hidden"}`} />
       {showContent && (
         <div className="absolute top-0 left-0 w-full h-full">
-          <video src="/video/backround_heart_new.webm" autoPlay loop muted preload="auto" className="w-full h-full object-cover" />
           <div className="absolute top-0 left-0 w-full h-full bg-black/50" />
           <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center pt-[100px]">
             <ContentBody />
