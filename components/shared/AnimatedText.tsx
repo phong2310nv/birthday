@@ -81,8 +81,9 @@ const AnimatedText = ({ text, delay, end, setFinish }: AnimatedTextProps) => {
         }, end)
       }
     });
+
     return controls.stop;
-  }, []);
+  }, [setFinish, animationTime, count, delay, end, text.length]);
 
   return (
     <motion.div className="flex w-full select-none items-center justify-center">

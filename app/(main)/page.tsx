@@ -51,9 +51,7 @@ export default function Home() {
                     variant="default"
                     className="w-fit m-auto rounded-full px-4 bg-[#eb1ec9] hover:bg-[#e362cd] border-none focus-visible:ring-0 focus-visible:ring-offset-0 text-white hover:text-white"
                     onClick={handleClickNameRegister}
-                  >
-                    OK
-                  </Button>
+                  >OK</Button>
                 </AlertDialogCancel>
               </AlertDialogFooter>
             </AlertDialogContent>
@@ -61,7 +59,7 @@ export default function Home() {
           <AlertDialog open={openNameConfirm} onOpenChange={setOpenNameConfirm}>
             <AlertDialogContent className="w-[80%] m-auto rounded-lg max-w-[400px]">
               <AlertDialogHeader className="w-full flex flex-col justify-center items-center gap-y-[20px]">
-                <AlertDialogTitle>Tên của mình cũng không nhớ là sao nhỉ? Nhập "Trà My" vào nhé! 😈</AlertDialogTitle>
+                <AlertDialogTitle>Tên của mình cũng không nhớ là sao nhỉ? Nhập &quot;Trà My&quot; vào nhé! 😈</AlertDialogTitle>
               </AlertDialogHeader>
               <AlertDialogFooter>
                 <AlertDialogCancel asChild>
@@ -70,14 +68,17 @@ export default function Home() {
                     variant="default"
                     className="w-fit m-auto rounded-full px-4 bg-[#eb1ec9] hover:bg-[#e362cd] border-none focus-visible:ring-0 focus-visible:ring-offset-0 text-white hover:text-white"
                     onClick={handleClickNameConfirmed}
-                  >
-                    OK
-                  </Button>
+                  >OK</Button>
                 </AlertDialogCancel>
               </AlertDialogFooter>
             </AlertDialogContent>
           </AlertDialog>
         </div>
+      )}
+      {isOpenGift && (
+        <audio id="audio" loop autoPlay>
+          <source src="/audio/bg-music.mp3" type="audio/mpeg" />
+        </audio>
       )}
       {showContent && (
         <div className="absolute top-0 left-0 w-full h-full">

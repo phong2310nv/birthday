@@ -60,7 +60,7 @@ const ContentBody = () => {
           variants={containerVariants}
           animate="visible"
           initial="hidden"
-          className="w-[80%] mt-[50px] mx-auto border border-white rounded-tl-lg rounded-br-lg p-[10px]"
+          className="w-[90%] max-w-[400px] mt-[50px] mx-auto border border-white rounded-tl-lg rounded-br-lg p-[10px]"
         >
           <div className="bg-white/50 p-[14px] text-sm rounded-tl-xl rounded-br-xl text-white transition-all duration-200">
             <p className="w-full font-small">Từ ông bụt tốt bụng nhất quả đất 🤣</p>
