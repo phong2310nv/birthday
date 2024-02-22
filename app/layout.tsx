@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Love you forever!!!",
 };
 
-export default function MainLayout({ children, }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body className={montserrat.className}>{children}</body>

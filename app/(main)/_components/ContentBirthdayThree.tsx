@@ -38,7 +38,7 @@ const ContentBirthdayThree = () => {
   const [endContentOne, setEndContentOne] = useState<boolean>(false);
   const [endContentTwo, setEndContentTwo] = useState<boolean>(false);
   const [lastContent, setLastContent] = useState<boolean>(false);
-  const [lastContentQuote, setLastContentQuote] = useState<boolean>(false);
+  const [lastContentQoute, setLastContentQoute] = useState<boolean>(false);
 
   useEffect(() => {
     if (showContentFirst || showContentSecond) {
@@ -55,7 +55,7 @@ const ContentBirthdayThree = () => {
   return (
     <>
       {!finishFirst && <AnimatedText text="Chờ xíu..." delay={1} end={500} setFinish={setFinishFirst} />}
-      {finishFirst && !finishSecond && <AnimatedText text="Hình như hôm nay..là ngày mà ai cũng nâng niu người phụ nữ của riêng ta đóa" delay={1} end={1000} setFinish={setFinishSecond} />}
+      {finishFirst && !finishSecond && <AnimatedText text="Hình như hôm nay..là sinh nhật của ai đó xinh đẹp nhất quả đất thì phải 🤣🎉" delay={1} end={1000} setFinish={setFinishSecond} />}
       {finishFirst && finishSecond && (
         <div className="flex flex-col items-start justify-center text-center gap-y-6">
           <motion.p
@@ -63,19 +63,19 @@ const ContentBirthdayThree = () => {
             animate="visible"
             initial="hidden"
             className="text-lg w-full"
-          >Happy Women day to my love Uyển Nhi 🥳</motion.p>
-          {!endContentOne && <AnimatedText text="8/3 thì người ta hay tặng hoa nè, nhưng bông hoa đẹp nhất trong cuộc đời anh chính là em. 🥰" delay={1} end={500} setFinish={setFinishThird} />}
-          {finishThird && (<AnimatedText text="Chúc em - bông hoa đẹp nhất của đời a luôn mãi mãi xinh đẹp, đáng yêu và gặp nhiều niềm vui trong cuộc sống nhé." delay={1} end={500} setFinish={setFinishFourth} />)}
-          {finishThird && finishFourth && (<AnimatedText text="Tuy giờ, anh và em cũng đã trải qua nhiều niềm vui nỗi buồn cùng nhau. 2 đứa có nhiều tâm tư nguyện vọng cho nhau nhưng chưa nói hay làm được. Nhưng hãy vẫn yêu thương nhau như ngày mà chúng ta đến với nhau nhé. Dù bất kể có gì khó khăn hãy nắm tay a và mình cùng vượt qua nó nha bé iu. 😘" delay={1} end={1000} setFinish={setFinishFifth} />)}
+          >Happy Birthday to Trà My 🥳</motion.p>
+          {!endContentOne && <AnimatedText text="Chúc cho bông hoa này tuổi mới luôn luôn xinh đẹp 😘 ><" delay={1} end={500} setFinish={setFinishThird} />}
+          {finishThird && (<AnimatedText text="Thật mạnh mẽ để đương đầu với đời nhưng không quên dịu dàng, iu thương chính bản thân mình 😁" delay={1} end={500} setFinish={setFinishFourth} />)}
+          {finishThird && finishFourth && (<AnimatedText text="Cuối cùng là sớm đạt được những kỳ vọng của bản thân trong hành trình tiếp theo nhé 😘" delay={1} end={1000} setFinish={setFinishFifth} />)}
           {!lastContent && endContentOne && (
             <>
-              <AnimatedText text="Tình yêu là sự bao dung, vị tha, chia sẻ và cam chịu sát cánh bên nhau." delay={1} end={500} setFinish={setEndContentTwo} />
-              {endContentTwo && <AnimatedText text="Anh biết em rất tự lập và không muốn giải thích nhiều, nhưng em giờ đã có anh ở bên, luôn lắng nghe và sẽ đi cùng em bất kể em muốn đi đâu 😁" delay={1} end={500} setFinish={setLastContent} />}
+              <AnimatedText text="Thật ra mọi việc có khi rất là đơn giản nên cậu hãy cứ tự tin vào chính bản thân mình, đừng make it compicated lên nhé." delay={1} end={500} setFinish={setEndContentTwo} />
+              {endContentTwo && <AnimatedText text="Cuối cùng thì enjoy cái moment này thôi nào. 🥳🎉" delay={1} end={500} setFinish={setLastContent} />}
             </>
           )}
           {lastContent && (
             <div className={`${dancingScript.className} text-center text-lg w-full`}>
-              <AnimatedText text="Chúc mừng 8/3 nha công chúa của a 🥰. Anh yêu em, nhớ em nhiều lắm. Tý ra gặp anh đấy a còn bất ngờ nữa cho em cơ. 😆" delay={1} end={1000} setFinish={setLastContentQuote} />
+              <AnimatedText text="Chúc mừng ngày sinh nhật vui vẻ. 🥳🎉" delay={1} end={1000} setFinish={setLastContentQoute} />
             </div>
           )}
         </div>

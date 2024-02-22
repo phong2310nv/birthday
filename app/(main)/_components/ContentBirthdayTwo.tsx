@@ -36,17 +36,17 @@ const ContentBirthday = () => {
     <>
       {!showContent ? (
         <>
-          <h1>Bó hoa có 100 bông cơ, nhưng thôi lấy tạm trước 4 bông nhé! 🤣🎉</h1>
+          <h1>Thổi 21 cây nến thì mệt quá, thôi thổi tạm 4 cây thôi nhé! 🤣🎉</h1>
           <motion.div
             variants={containerVariants}
             animate="visible"
             initial="hidden"
-            className="w-fit mx-auto flex items-center justify-center mt-5 gap-x-4"
+            className="w-fit mx-auto flex items-center justify-center mt-3"
           >
-            <Image src="/images/rose.png" alt="Rose" priority width={50} height={100} className={`trasition-all duration-300 ${candleOneOff ? "opacity-0" : "opacity-100"}`} onClick={() => setCandleOneOff(true)} />
-            <Image src="/images/rose.png" alt="Rose" priority width={50} height={100} className={`trasition-all duration-300 ${candleTwoOff ? "opacity-0" : "opacity-100"}`} onClick={() => setCandleTwoOff(true)} />
-            <Image src="/images/rose.png" alt="Rose" priority width={50} height={100} className={`trasition-all duration-300 ${candleThreeOff ? "opacity-0" : "opacity-100"}`} onClick={() => setCandleThreeOff(true)} />
-            <Image src="/images/rose.png" alt="Rose" priority width={50} height={100} className={`trasition-all duration-300 ${candleFourOff ? "opacity-0" : "opacity-100"}`} onClick={() => setCandleFourOff(true)} />
+            <Image src="/images/candle.png" alt="Candle" priority width={50} height={100} className={`trasition-all duration-300 ${candleOneOff ? "opacity-0" : "opacity-100"}`} onClick={() => setCandleOneOff(true)} />
+            <Image src="/images/candle.png" alt="Candle" priority width={50} height={100} className={`trasition-all duration-300 ${candleTwoOff ? "opacity-0" : "opacity-100"}`} onClick={() => setCandleTwoOff(true)} />
+            <Image src="/images/candle.png" alt="Candle" priority width={50} height={100} className={`trasition-all duration-300 ${candleThreeOff ? "opacity-0" : "opacity-100"}`} onClick={() => setCandleThreeOff(true)} />
+            <Image src="/images/candle.png" alt="Candle" priority width={50} height={100} className={`trasition-all duration-300 ${candleFourOff ? "opacity-0" : "opacity-100"}`} onClick={() => setCandleFourOff(true)} />
           </motion.div>
         </>
       ) : (
