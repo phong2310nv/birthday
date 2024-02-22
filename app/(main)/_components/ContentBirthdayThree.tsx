@@ -86,7 +86,7 @@ const ContentBirthdayThree = () => {
         <AlertDialogContent className="w-[90%] m-auto rounded-lg max-w-[400px]">
           <AlertDialogHeader className="w-full flex flex-col justify-center items-center gap-y-[20px]">
             <Image src="/gif/bear-modal.gif" alt="Gif" priority width={100} height={100} className="rounded-full object-cover" />
-            <AlertDialogTitle>Uyển Nhi có muốn nhận quà tiếp không nhỉ? 😁😘</AlertDialogTitle>
+            <AlertDialogTitle>Trà My có muốn nhận quà tiếp không nhỉ? 😁😘</AlertDialogTitle>
             <AlertDialogTitle className="text-md">Chọn đi nè 😄</AlertDialogTitle>
           </AlertDialogHeader>
           <AlertDialogFooter className="flex flex-col gap-y-3 w-full">
