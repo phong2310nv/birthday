@@ -53,7 +53,7 @@ const ContentBody = () => {
       </div>
 
       <div className="mt-[30px] font-semibold text-white">
-        <AnimatedText text="Xin chào Trà My nhé ✨" delay={1} end={500} setFinish={setFinishFirst} />
+        <AnimatedText text="Xin chào Uyển Nhi nhé ✨" delay={1} end={500} setFinish={setFinishFirst} />
       </div>
       {finishFirst && (
         <motion.div
@@ -63,7 +63,7 @@ const ContentBody = () => {
           className="w-[90%] max-w-[400px] mt-[50px] mx-auto border border-white rounded-tl-lg rounded-br-lg p-[10px]"
         >
           <div className="bg-white/50 p-[14px] text-sm rounded-tl-xl rounded-br-xl text-white transition-all duration-200">
-            <p className="w-full font-small">Từ ông bụt tốt bụng nhất quả đất 🤣</p>
+            <p className="w-full font-small">Từ người đàn ông xấu xa thương em nhất trên đời 😍</p>
             <ContentBirthday />
           </div>
         </motion.div>
