@@ -12,7 +12,7 @@ const ContentBirthday = () => {
     <div className="text-center font-semibold text-md mt-5">
       {!showSecondContent ? (
         <>
-          <AnimatedText text="Sắp xong rồi đó, tiếp tục làm theo hướng dẫn để nhận quà nè 🤣🎉" delay={1} end={500} setFinish={setFinishFirst} />
+          <AnimatedText text="Nay là một ngày rất đặc biệt, anh có món quà cho em, hãy cứ tiếp tục làm theo lời anh để nhận quà nhé" delay={1} end={500} setFinish={setFinishFirst} />
           {finishFirst && <div className="mt-[20px] w-full flex justify-end" onClick={() => setShowSecondContent(true)}>Click to continue</div>}
         </>
       ) : (

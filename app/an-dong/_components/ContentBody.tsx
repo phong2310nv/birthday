@@ -53,7 +53,7 @@ const ContentBody = () => {
       </div>
 
       <div className="mt-[30px] font-semibold text-white">
-        <AnimatedText text="Xin chào Uyển Nhi nhé ✨" delay={1} end={500} setFinish={setFinishFirst} />
+        <AnimatedText text="Xin chào Công Chúa Uyển Nhi nhé ✨" delay={1} end={500} setFinish={setFinishFirst} />
       </div>
       {finishFirst && (
         <motion.div

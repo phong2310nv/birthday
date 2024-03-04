@@ -17,7 +17,7 @@ export default function Home() {
   const [name, setName] = useState<string>("");
 
   const handleClickNameRegister = () => {
-    if (name !== "Trà My") {
+    if (name !== "Công Chúa Uyển Nhi") {
       setName("");
       setOpenNameConfirm(true);
     } else {
@@ -59,7 +59,7 @@ export default function Home() {
           <AlertDialog open={openNameConfirm} onOpenChange={setOpenNameConfirm}>
             <AlertDialogContent className="w-[90%] m-auto rounded-lg max-w-[400px]">
               <AlertDialogHeader className="w-full flex flex-col justify-center items-center gap-y-[20px]">
-                <AlertDialogTitle>Tên của mình cũng không nhớ là sao nhỉ? Nhập &quot;Trà My&quot; vào nhé! 😈</AlertDialogTitle>
+                <AlertDialogTitle>Tên của mình cũng không nhớ là sao nhỉ? Nhập &quot;Công Chúa Uyển Nhi&quot; vào nhé! 😈</AlertDialogTitle>
               </AlertDialogHeader>
               <AlertDialogFooter>
                 <AlertDialogCancel asChild>

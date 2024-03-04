@@ -55,7 +55,7 @@ const ContentBirthdayThree = () => {
   return (
     <>
       {!finishFirst && <AnimatedText text="Chờ xíu..." delay={1} end={500} setFinish={setFinishFirst} />}
-      {finishFirst && !finishSecond && <AnimatedText text="Hình như hôm nay..là sinh nhật của ai đó xinh đẹp nhất quả đất thì phải 🤣🎉" delay={1} end={1000} setFinish={setFinishSecond} />}
+      {finishFirst && !finishSecond && <AnimatedText text="Đợi đã 😗😗😗 đợi 1 chút này 😗😗😗 nay là ngày gì ấy nhờ" delay={1} end={1000} setFinish={setFinishSecond} />}
       {finishFirst && finishSecond && (
         <div className="flex flex-col items-start justify-center text-center gap-y-6">
           <motion.p
@@ -63,19 +63,20 @@ const ContentBirthdayThree = () => {
             animate="visible"
             initial="hidden"
             className="text-lg w-full"
-          >Happy Birthday to Trà My 🥳</motion.p>
-          {!endContentOne && <AnimatedText text="Chúc cho bông hoa này tuổi mới luôn luôn xinh đẹp 😘 ><" delay={1} end={500} setFinish={setFinishThird} />}
-          {finishThird && (<AnimatedText text="Thật mạnh mẽ để đương đầu với đời nhưng không quên dịu dàng, iu thương chính bản thân mình 😁" delay={1} end={500} setFinish={setFinishFourth} />)}
-          {finishThird && finishFourth && (<AnimatedText text="Cuối cùng là sớm đạt được những kỳ vọng của bản thân trong hành trình tiếp theo nhé 😘" delay={1} end={1000} setFinish={setFinishFifth} />)}
+          >Happy Women's day to my love Công Chúa Uyển Nhi 🥳</motion.p>
+          {!endContentOne && <AnimatedText text="8/3 thì người ta hay tặng hoa nè, nhưng bông hoa đẹp nhất trong cuộc đời anh chính là em" delay={1} end={500} setFinish={setFinishThird} />}
+          {finishThird && (<AnimatedText text="Chúc em, bông hoa đẹp nhất của đời a luôn mãi mãi xinh đẹp, đáng yêu và gặp nhiều niềm vui nhé." delay={1} end={500} setFinish={setFinishFourth} />)}
+          {finishThird && finishFourth && (<AnimatedText text="Tuy giờ,  em, anh và 2 đứa cũng đã trải qua nhiều niềm vui nỗi buồn cùng nhau. 2 đứa có nhiều tâm tư nguyện vọng cho nhau nhưng chưa nói hay chưa làm được. Nhưng hãy vẫn thương yêu nhau như ngày mà chúng ta đến với nhau nhé. Dù bất kể có j khó khăn hãy nắm tay a và mình cùng vượt qua nó nha bé iu." delay={1} end={1000} setFinish={setFinishFifth} />)}
           {!lastContent && endContentOne && (
             <>
-              <AnimatedText text="Thật ra mọi việc có khi rất là đơn giản nên cậu hãy cứ tự tin vào chính bản thân mình, đừng make it compicated lên nhé." delay={1} end={500} setFinish={setEndContentTwo} />
-              {endContentTwo && <AnimatedText text="Cuối cùng thì enjoy cái moment này thôi nào. 🥳🎉" delay={1} end={500} setFinish={setLastContent} />}
+              <AnimatedText text="Tình yêu là sự bao dung, vị tha, chia sẻ và cam chịu sát cánh bên nhau mà. Anh biết em rất tự lập và không muốn giải thích quá nhiều 
+Nhưng em giờ có anh ở bên, lắng nghe và đi cùng em bất kể em muốn đi đâu" delay={1} end={500} setFinish={setLastContent} />
+              {/* {endContentTwo && <AnimatedText text="Cuối cùng thì enjoy cái moment này thôi nào. 🥳🎉" delay={1} end={500} setFinish={setLastContent} />} */}
             </>
           )}
           {lastContent && (
             <div className={`${dancingScript.className} text-center text-lg w-full`}>
-              <AnimatedText text="Chúc mừng ngày sinh nhật vui vẻ. 🥳🎉" delay={1} end={1000} setFinish={setLastContentQoute} />
+              <AnimatedText text="Chúc mừng 8/3 nha công chúa của a 🥰 Anh yêu em, nhớ em nhiều lắm. Tý ra gặp anh đấy a còn bất ngờ nữa cho em cơ. 🥳🎉" delay={1} end={1000} setFinish={setLastContentQoute} />
             </div>
           )}
         </div>
@@ -86,7 +87,7 @@ const ContentBirthdayThree = () => {
         <AlertDialogContent className="w-[90%] m-auto rounded-lg max-w-[400px]">
           <AlertDialogHeader className="w-full flex flex-col justify-center items-center gap-y-[20px]">
             <Image src="/gif/bear-modal.gif" alt="Gif" priority width={100} height={100} className="rounded-full object-cover" />
-            <AlertDialogTitle>Trà My có muốn nhận quà tiếp không nhỉ? 😁😘</AlertDialogTitle>
+            <AlertDialogTitle>Công Chúa Uyển Nhi có muốn nhận quà tiếp không nhỉ? 😁😘</AlertDialogTitle>
             <AlertDialogTitle className="text-md">Chọn đi nè 😄</AlertDialogTitle>
           </AlertDialogHeader>
           <AlertDialogFooter className="flex flex-col gap-y-3 w-full">
@@ -114,7 +115,7 @@ const ContentBirthdayThree = () => {
         <AlertDialogContent className="w-[90%] m-auto rounded-lg max-w-[400px] py-[40px]">
           <AlertDialogHeader className="w-full flex flex-col justify-center items-center gap-y-[20px]">
             <Image src="/gif/bear-modal-agree.gif" alt="Gif" priority width={100} height={100} className="rounded-full object-cover" />
-            <AlertDialogTitle className="text-md">Cứ bình tĩnh nào My, quà nè! 😄</AlertDialogTitle>
+            <AlertDialogTitle className="text-md">Cứ bình tĩnh nào Nhi, quà nè! 😄</AlertDialogTitle>
           </AlertDialogHeader>
         </AlertDialogContent>
       </AlertDialog>
