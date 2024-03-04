@@ -63,7 +63,7 @@ const ContentBirthdayThree = () => {
             animate="visible"
             initial="hidden"
             className="text-lg w-full"
-          >Happy Women's day to my love Công Chúa Uyển Nhi 🥳</motion.p>
+          >Happy Women&apos;s day to my love Công Chúa Uyển Nhi 🥳</motion.p>
           {!endContentOne && <AnimatedText text="8/3 thì người ta hay tặng hoa nè, nhưng bông hoa đẹp nhất trong cuộc đời anh chính là em" delay={1} end={500} setFinish={setFinishThird} />}
           {finishThird && (<AnimatedText text="Chúc em, bông hoa đẹp nhất của đời a luôn mãi mãi xinh đẹp, đáng yêu và gặp nhiều niềm vui nhé." delay={1} end={500} setFinish={setFinishFourth} />)}
           {finishThird && finishFourth && (<AnimatedText text="Tuy giờ,  em, anh và 2 đứa cũng đã trải qua nhiều niềm vui nỗi buồn cùng nhau. 2 đứa có nhiều tâm tư nguyện vọng cho nhau nhưng chưa nói hay chưa làm được. Nhưng hãy vẫn thương yêu nhau như ngày mà chúng ta đến với nhau nhé. Dù bất kể có j khó khăn hãy nắm tay a và mình cùng vượt qua nó nha bé iu." delay={1} end={1000} setFinish={setFinishFifth} />)}
