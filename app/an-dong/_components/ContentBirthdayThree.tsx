@@ -57,7 +57,7 @@ const ContentBirthdayThree = () => {
       {!finishFirst && <AnimatedText text="Chờ xíu..." delay={1} end={500} setFinish={setFinishFirst} />}
       {finishFirst && !finishSecond && <AnimatedText text="Hình như hôm nay..là ngày mà ai cũng nâng niu người phụ nữ của riêng ta đóa" delay={1} end={1000} setFinish={setFinishSecond} />}
       {finishFirst && finishSecond && (
-        <div className="flex flex-col items-start justify-center text-center gap-y-6">
+        <div className="flex flex-col items-start justify-center text-center gap-y-4">
           <motion.p
             variants={containerVariants}
             animate="visible"
@@ -111,7 +111,7 @@ const ContentBirthdayThree = () => {
       </AlertDialog>
       {/* Dialog Agree */}
       <AlertDialog open={showContentFirst} onOpenChange={setShowContentFirst}>
-        <AlertDialogContent className="w-[90%] m-auto rounded-lg max-w-[400px] py-[40px]">
+        <AlertDialogContent className="w-[90%] m-auto rounded-lg max-w-[440px] py-[40px]">
           <AlertDialogHeader className="w-full flex flex-col justify-center items-center gap-y-[20px]">
             <Image src="/gif/bear-modal-agree.gif" alt="Gif" priority width={100} height={100} className="rounded-full object-cover" />
             <AlertDialogTitle className="text-md">Cứ bình tĩnh nào Nhi, quà nè! 😄</AlertDialogTitle>
@@ -120,7 +120,7 @@ const ContentBirthdayThree = () => {
       </AlertDialog>
       {/* Dialog Disagree */}
       <AlertDialog open={showContentSecond} onOpenChange={setShowContentSecond}>
-        <AlertDialogContent className="w-[90%] m-auto rounded-lg max-w-[400px] py-[40px]">
+        <AlertDialogContent className="w-[90%] m-auto rounded-lg max-w-[440px] py-[40px]">
           <AlertDialogHeader className="w-full flex flex-col justify-center items-center gap-y-[20px]">
             <Image src="/gif/bear-modal-reject.gif" alt="Gif" priority width={100} height={100} className="rounded-full object-cover" />
             <AlertDialogTitle className="text-md">Thôi đừng dỗi nữa, quà ở đây nè!😄</AlertDialogTitle>

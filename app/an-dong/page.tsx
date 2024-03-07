@@ -80,7 +80,7 @@ export default function HomePage() {
       {showContent && (
         <div className="absolute top-0 left-0 w-full h-full">
           <div className="absolute top-0 left-0 w-full h-full bg-black/50" />
-          <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center pt-[100px]">
+          <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center pt-[80px]">
             <ContentBody />
           </div>
         </div>

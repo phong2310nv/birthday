@@ -52,7 +52,7 @@ const ContentBody = () => {
         <Image src={bearGif} alt="Gif" width={100} height={100} priority className="m-auto rounded-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-2 object-cover" />
       </div>
 
-      <div className="mt-[30px] font-semibold text-white">
+      <div className="mt-[20px] font-semibold text-white">
         <AnimatedText text="Xin chào Công Chúa Uyển Nhi nhé ✨" delay={1} end={500} setFinish={setFinishFirst} />
       </div>
       {finishFirst && (
@@ -60,7 +60,7 @@ const ContentBody = () => {
           variants={containerVariants}
           animate="visible"
           initial="hidden"
-          className="w-[90%] max-w-[400px] mt-[50px] mx-auto border border-white rounded-tl-lg rounded-br-lg p-[10px]"
+          className="w-[90%] max-w-[440px] mt-[20px] mx-auto border border-white rounded-tl-lg rounded-br-lg p-[10px]"
         >
           <div className="bg-white/50 p-[14px] text-sm rounded-tl-xl rounded-br-xl text-white transition-all duration-200">
             <p className="w-full font-small">Từ người đàn ông xấu xa thương em nhất trên đời 😍</p>
